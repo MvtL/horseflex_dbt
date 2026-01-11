@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: airbyte_landing          # dit is de dbt "source name"
+    database: horseflex-483119  # optioneel, maar ik raad aan: expliciet
+    schema: airbyte_landing        # dit is je BigQuery dataset
+    tables:
+      - name: Webshop_export_orders  # dit is je BigQuery tabelnaam
