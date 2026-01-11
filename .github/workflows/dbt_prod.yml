@@ -46,7 +46,7 @@ jobs:
                 method: service-account
                 project: "{{ env_var('GCP_PROJECT_ID') }}"
                 dataset: "{{ env_var('DBT_DATASET_PROD') }}"
-                location: "{{ env_var('DBT_LOCATION', 'EU') }}"
+                location: EU
                 keyfile: /tmp/sa.json
                 threads: 4
                 job_execution_timeout_seconds: 300
