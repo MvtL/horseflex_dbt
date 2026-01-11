@@ -4,6 +4,12 @@ name: dbt build (prod)
   push:
     branches: ["main"]
   workflow_dispatch:
+  schedule:
+    - cron: "0 3 * * *"   # 03:00 UTC (04:00 winter, 05:00 zomer)
+
+concurrency:
+  group: dbt-prod
+  cancel-in-progress: false
 
 jobs:
   dbt:
