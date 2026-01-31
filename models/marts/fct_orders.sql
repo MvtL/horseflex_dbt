@@ -1,15 +1,14 @@
 select
     order_id,
-    order_number,
-    order_date,
+    order_nummer,
+    order_datum,
     order_timestamp,
-    country_code,
-    customer_role,
-
-    total_amount,
-    net_amount,
-    tax_amount,
-    shipping_amount
+    land_code,
+    klant_rol,
+    totaal_bedrag,
+    net_bedrag,
+    btw_bedrag,
+    verzend_amount
 
 from {{ ref('stg_orders') }}
 where order_date is not null
