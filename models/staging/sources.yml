@@ -7,6 +7,7 @@ sources:
     tables:
       - name: Webshop_export_orders  # dit is je BigQuery tabelnaam
       - name: Goedgepikt_reseller_orders  # dit is je BigQuery tabelnaam
+      - name: Prijslijst  # dit is je BigQuery tabelnaam
 
 
     
