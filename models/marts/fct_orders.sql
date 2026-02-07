@@ -18,7 +18,7 @@ from {{ ref('stg_orders') }}
 resellers as (
   
 select
- --   order_id,
+    order_id,
     order_nummer,
     order_datum,
   --  order_timestamp,
