@@ -10,7 +10,8 @@ renamed as (
     select
         _airbyte_raw_id                       as order_id,
         Land                                  as land_code,
-        Price                                 as net_bedrag,
+        Price                                 as net_bedrag_product,
+        Quantity_ordered * Price              as net_bedrag,
     --  Plaats,
     --  Straat,
     --  Postcode,
