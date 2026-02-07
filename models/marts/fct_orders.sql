@@ -1,7 +1,7 @@
 with webshop as (
 
 select
- --   order_id,
+    order_id,
     order_nummer,
     order_datum,
   --  order_timestamp,
