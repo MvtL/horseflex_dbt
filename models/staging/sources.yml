@@ -8,6 +8,17 @@ sources:
       - name: Webshop_export_orders  # dit is je BigQuery tabelnaam
       - name: Goedgepikt_reseller_orders  # dit is je BigQuery tabelnaam
       - name: Prijslijst  # dit is je BigQuery tabelnaam
+      - name: Flexrexorders  # dit is je BigQuery tabelnaam
+
+  - name: azure_landing
+    database: dwh_horsefelx
+    schema: dbo
+    tables:
+      - name: landing_flexrex_orders
+      - name: landing_horseflex_Goedgepikt_reseller_orders
+      - name: landing_horseflex_orders
+      - name: landing_horseflex_products
+      - name: landing_horseflex_customers
 
 
     
